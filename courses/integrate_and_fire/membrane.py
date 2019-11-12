@@ -1,12 +1,4 @@
 from __future__ import print_function
-"""
-Created on Wed Apr 22 15:53:00 2015
-
-Charging and discharging curves for passive membrane patch
-R Rao 2007
-
-translated to Python by rkp 2015
-"""
 
 import numpy as np
 import matplotlib.pyplot as plt

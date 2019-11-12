@@ -1,12 +1,4 @@
 from __future__ import print_function
-"""
-Created on Wed Apr 22 16:02:53 2015
-
-Basic integrate-and-fire neuron 
-R Rao 2007
-
-translated to Python by rkp 2015
-"""
 
 import numpy as np
 import matplotlib.pyplot as plt

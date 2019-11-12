@@ -1,6 +1,4 @@
 """
-Created on Wed Apr 22 15:21:11 2015
-
 Code to compute spike-triggered average.
 """
 
