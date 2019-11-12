@@ -85,4 +85,6 @@ example schizophrenia, because dopamine change is global.
 2. Memory learning happens in synapse.
 3. Neurons that fire together wire together.
 
-https://en.support.wordpress.com/markdown-quick-reference/
+[Stanford Lectures](https://www.youtube.com/watch?v=NNnIGh9g6fA&list=PL848F2368C90DDC3D)
+
+[Markdown cheat sheet](https://en.support.wordpress.com/markdown-quick-reference/)
