@@ -71,8 +71,7 @@ of the brain.
 8. Neuromuscular Junction - muscle work in same way it have receptors to
 neurotransmitters
 
-#### Neuromuscular Junction - muscle work in same way it have receptors to
-neurotransmitters
+#### Neuromuscular Junction - muscle work in same way it have receptors to neurotransmitters
 
 #### Neuropharmacology: Changing the receptor intensity, using lsd mescaline etc.
 
