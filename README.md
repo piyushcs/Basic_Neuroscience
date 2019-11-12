@@ -13,25 +13,25 @@ large area allocated to them.
 3. Temporal Lobe - Auditory Information, hearing, memory formation
 4. occipital lobe - Visual Information
 
-### Limbic system
+#### Limbic system
 1. It is below the cortex but above brain stem.
 
-### Hippocampus
+#### Hippocampus
 1. Forming new memory, storage is elsewhere.
 
-### Amygdala
+#### Amygdala
 1. Fear and anxiety
 
-### Hypothalamus
+#### Hypothalamus
 1. 4 F's, fear, flight, feeding and fucking
 2. Release Hormones
 
-### Brain Internal Structure
+#### Brain Internal Structure
 Interconnected web of mess, Individual cells, Cells other than neurons, 90%
 cells (glia meaning glue), star-shaped cell to supply nutrients to neurons and
 regulate.
 
-### Neurons
+#### Neurons
 1. 100 billion neurons with 10000 connections each to other neurons called
 synapses.
 2. Dendrites receive info from neurons.
