@@ -23,7 +23,7 @@ large area allocated to them.
 1. Fear and anxiety
 
 #### Hypothalamus
-1. 4 F's, fear, flight, feeding and fucking
+1. 4 F's, fear, flight, feeding and reproduction
 2. Release Hormones
 
 #### Brain Internal Structure
