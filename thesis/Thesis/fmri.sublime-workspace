@@ -1,0 +1,508 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"conv",
+				"conv_img"
+			],
+			[
+				"x",
+				"x_train"
+			],
+			[
+				"get",
+				"get_2d_model"
+			],
+			[
+				"y",
+				"y_train"
+			],
+			[
+				"t",
+				"transform"
+			],
+			[
+				"num",
+				"num_classes"
+			],
+			[
+				"test",
+				"test_input_shape"
+			],
+			[
+				"in",
+				"input_shape"
+			],
+			[
+				"ke",
+				"kernel_size"
+			],
+			[
+				"COn",
+				"Conv2D"
+			],
+			[
+				"l",
+				"lsyncd"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "last_phase.py",
+			"settings":
+			{
+				"buffer_size": 3161,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "mnist_cnn.py",
+			"settings":
+			{
+				"buffer_size": 2544,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/folders/f1/6f1snhkn5s73ws7gcgj80ly9r4sr76/T/sublime-sftp-browse-1528109616/iitk_gpu/users/mtech/piyushcs/last_phase.py",
+			"settings":
+			{
+				"buffer_size": 5298,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/SublimeHaskell/SublimeHaskell.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeHaskell/SublimeHaskell.sublime-build",
+					"Clean"
+				],
+				[
+					"Packages/SublimeHaskell/SublimeHaskell.sublime-build",
+					"Configure"
+				],
+				[
+					"Packages/SublimeHaskell/SublimeHaskell.sublime-build",
+					"Rebuild"
+				],
+				[
+					"Packages/SublimeHaskell/SublimeHaskell.sublime-build",
+					"Install"
+				],
+				[
+					"Packages/SublimeHaskell/SublimeHaskell.sublime-build",
+					"Test"
+				]
+			],
+			[
+				"Packages/SublimeHaskell/SublimeHaskell.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 59.0,
+		"last_filter": "select co",
+		"selected_items":
+		[
+			[
+				"select co",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Select Theme",
+				"UI: Select Theme"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"haskell",
+				"Set Syntax: Haskell (improved)"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"Select Theme",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/piyush.kumar/Desktop/demo_data/fmri.sublime-project",
+		"/Users/piyush.kumar/Desktop/demo_data/phase_last.py",
+		"/Users/piyush.kumar/Library/Application Support/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/Users/piyush.kumar/flexsnap_node.py",
+		"/var/folders/f1/6f1snhkn5s73ws7gcgj80ly9r4sr76/T/sublime-sftp-browse-1524567265/sublime-sftp-settings/root/setup.sh",
+		"/var/folders/f1/6f1snhkn5s73ws7gcgj80ly9r4sr76/T/sublime-sftp-browse-1524560842/sublime-sftp-settings/root/setup.sh",
+		"/Users/piyush.kumar/Desktop/startup.sh",
+		"/Users/piyush.kumar/Desktop/apiVersion: kubeadm.k8s.io:v1alpha1",
+		"/Users/piyush.kumar/keepalived/Dockerfile",
+		"/Users/piyush.kumar/Desktop/rsyncd.conf",
+		"/Users/piyush.kumar/Desktop/Dockerfile",
+		"/var/folders/f1/6f1snhkn5s73ws7gcgj80ly9r4sr76/T/sublime-sftp-browse-1523623654/sublime-sftp-settings/root/logs",
+		"/Users/piyush.kumar/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/piyush.kumar/Library/Application Support/Sublime Text 3/Packages/User/SFTP.sublime-settings",
+		"/Users/piyush.kumar/Library/Application Support/Sublime Text 3/Packages/SFTP/SFTP.sublime-settings",
+		"/var/folders/f1/6f1snhkn5s73ws7gcgj80ly9r4sr76/T/sublime-sftp-browse-1523621554/sublime-sftp-settings/root/keepalived/startup.sh",
+		"/var/folders/f1/6f1snhkn5s73ws7gcgj80ly9r4sr76/T/sublime-sftp-browse-1523619316/sublime-sftp-settings/root/setup.sh",
+		"/var/folders/f1/6f1snhkn5s73ws7gcgj80ly9r4sr76/T/sublime-sftp-browse-1523619153/sublime-sftp-settings/root/setup.sh",
+		"/var/folders/f1/6f1snhkn5s73ws7gcgj80ly9r4sr76/T/sublime-sftp-browse-1523617524/sublime-sftp-settings/root/setup.sh",
+		"/var/folders/f1/6f1snhkn5s73ws7gcgj80ly9r4sr76/T/sublime-sftp-browse-1523617472/sublime-sftp-settings/root/keepalived/chk_apiserver.sh",
+		"/Users/piyush.kumar/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/sublime-sftp-settings",
+		"/Users/piyush.kumar/Desktop/setup.sh",
+		"/Users/piyush.kumar/Desktop/xlrd.py",
+		"/Users/piyush.kumar/Downloads/setup.sh",
+		"/Users/piyush.kumar/Downloads/ha.svg",
+		"/Users/piyush.kumar/Desktop/export PEER_NAME=$(hostname)",
+		"/Users/piyush.kumar/Desktop/kind: ClusterRoleBinding  # this is for giving clu",
+		"/Users/piyush.kumar/Downloads/upload.py",
+		"/Users/piyush.kumar/Downloads/tls-example/makecert.sh",
+		"/Users/piyush.kumar/Downloads/sed_change_line.sh",
+		"/Users/piyush.kumar/Downloads/compute-compose-default.yml",
+		"/Users/piyush.kumar/Downloads/client_secret_360042077551-b8q79op3ah4j4bggqhdqbj7l6kpf2o33.apps.googleusercontent.com.json",
+		"/Users/piyush.kumar/Desktop/rsync.sh",
+		"/Users/piyush.kumar/__init__.py",
+		"/Users/piyush.kumar/callback.py",
+		"/Users/piyush.kumar/backend.py",
+		"/Users/piyush.kumar/auth.py",
+		"/Users/piyush.kumar/Arima.R",
+		"/Users/piyush.kumar/demo/auth.py",
+		"/Users/piyush.kumar/demo.go",
+		"/Users/piyush.kumar/filter.py",
+		"/Users/piyush.kumar/gmail.py",
+		"/Users/piyush.kumar/movie/hotspotd-0.1.6 2/main.py",
+		"/Users/piyush.kumar/pass.py",
+		"/Users/piyush.kumar/policies.json",
+		"/Users/piyush.kumar/Projects/app.py",
+		"/Users/piyush.kumar/result_parse.py",
+		"/Users/piyush.kumar/tc.py",
+		"/Users/piyush.kumar/trap.sh",
+		"/Users/piyush.kumar/watermark_config.yaml",
+		"/Users/piyush.kumar/Desktop/test.hs",
+		"/Users/piyush.kumar/Desktop/lsyncd/files",
+		"/Users/piyush.kumar/Desktop/lsyncd/inotify.py",
+		"/Users/piyush.kumar/Desktop/lsyncd/config",
+		"/Users/piyush.kumar/Library/Application Support/Sublime Text 3/Packages/User/python3.sublime-build",
+		"/Users/piyush.kumar/Desktop/lsyncd/daemonset.yaml",
+		"/Users/piyush.kumar/config1",
+		"/Users/piyush.kumar/lsyncd_init.sh",
+		"/Users/piyush.kumar/dummy",
+		"/Users/piyush.kumar/rsync",
+		"/Users/piyush.kumar/Desktop/desktop/rsync.go",
+		"/Users/piyush.kumar/Downloads/vxctlr.log",
+		"/Users/piyush.kumar/vss_ctlr.go",
+		"/private/var/folders/f1/6f1snhkn5s73ws7gcgj80ly9r4sr76/T/com.microsoft.Outlook/Outlook Temp/clusterrolebinding.yaml",
+		"/Users/piyush.kumar/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/piyush.kumar/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"print"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "last_phase.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2166,
+								2170
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1056.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "mnist_cnn.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2544,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1663,
+								1663
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/var/folders/f1/6f1snhkn5s73ws7gcgj80ly9r4sr76/T/sublime-sftp-browse-1528109616/iitk_gpu/users/mtech/piyushcs/last_phase.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5298,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								741,
+								741
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"is_remote": true,
+							"remote_loading": false,
+							"synced": true,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tmp_dir": "/var/folders/f1/6f1snhkn5s73ws7gcgj80ly9r4sr76/T/sublime-sftp-browse-1528109616/iitk_gpu/",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 102.0
+	},
+	"output.exec":
+	{
+		"height": 50.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 29.0
+	},
+	"pinned_build_system": "Packages/User/Python3.sublime-build",
+	"project": "fmri.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/startup.sh"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
