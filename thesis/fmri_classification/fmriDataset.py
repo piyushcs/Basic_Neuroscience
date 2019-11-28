@@ -1,11 +1,7 @@
-#!/usr/bin/env python
-
-### Loading the fmri matlab dataset to python
-
 import sklearn
 import numpy as np
 import scipy.io as sio
-from sklearn.model_selection import KFold
+#from sklearn.model_selection import KFold
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 
@@ -14,13 +10,16 @@ class fmriDataset:
     
     def __init__(self, folder=None):
         # Download the dataset to data folder fetch the file names
-        self.filename = 'data/data-science-P1.mat'
-        self.X = None
-        self.Y = None
+        self.__filename = 'data/data-science-P1.mat'
+        self.__X = None
+        self.__Y = None
+
+        # Parsing the data
+        self.parseData()
 
     ### Converting flat fmri images to 3D
-    def convert3D(self, flat_FMRI, converter3D):
-        image_3D = np.array(converter3D, dtype=float)
+    def __convert3D(self, flatFMRI, converter3D):
+        image3D = np.array(converter3D, dtype=float)
 
         # converting flat fmri to 3D fmri image
         for i in range(converter3D.shape[0]):
@@ -28,16 +27,23 @@ class fmriDataset:
                 for k in range(converter3D.shape[2]):
                     index = converter3D[i][j][k]
                     if index != 0:
-                        image_3D[i][j][k] = flat_FMRI[index-1]
+                        image3D[i][j][k] = flatFMRI[index-1]
 
-        return np.array(image_3D)
+        return np.array(image3D)
 
-    ### Function to load the data
-    def decodeData(self, multi_dimention=False, category_required=False, shuffle=False, normalize=True):
-        mat_contents = sio.loadmat(self.filename, squeeze_me=True)
+    ### Getting the Data
+    def getData(self):
+        if len(self.__X) == 0:
+            print("fMRI data not parsed")
+
+        return self.__X, self.__Y
+
+    ### Function to parse the data
+    def parseData(self, multiDimention=False, categoryRequired=False, shuffle=False, normalize=True):
+        matContents = sio.loadmat(self.__filename, squeeze_me=True)
 
         # fetching the label details
-        info = mat_contents['info']
+        info = matContents['info']
 
         category, label, epoch = [], [], []
         for item in info:
@@ -45,12 +51,12 @@ class fmriDataset:
             label.append(item[2])
             epoch.append(item[4])
 
-        if category_required:
+        if categoryRequired:
             Y = np.array(category)
         else:
             Y = np.array(label)
 
-        x = mat_contents['data']
+        x = matContents['data']
         x = np.array([list(i) for i in x])
 
         if normalize:
@@ -63,36 +69,36 @@ class fmriDataset:
         Y = Y.reshape(6, 60)
 
         # fetching the fmri data
-        if multi_dimention:
-            converter3D = sio.loadmat(self.filename)
+        if multiDimention:
+            converter3D = sio.loadmat(self.__filename)
             converter3D = converter3D['meta']['coordToCol'][0][0]
 
-            images_3D = []
+            images3D = []
             for i in range(X.shape[0]):
                 row = []
                 for j in range(X.shape[1]):
                     flat_img = X[i][j]
-                    image3D = self.convert3D(flat_img, converter3D)
+                    image3D = self.__convert3D(flat_img, converter3D)
                     row.append(image3D)
-                images_3D.append(row)
+                images3D.append(row)
 
-            X = images_3D
+            X = images3D
 
-        self.X = np.array(X)
-        self.Y = np.array(Y)
+        self.__X = np.array(X)
+        self.__Y = np.array(Y)
 
     ### Display fMRI images
-    def display_image(self, rgb_image):
+    def displayImage(self, rgbImage):
         fig = plt.figure(figsize=(8, 8))
         columns = 4
         rows = 5
         j = 2
         for i in range(1, columns*rows +1):
             fig.add_subplot(rows, columns, i)
-            plt.imshow(rgb_image[:,:, i])
+            plt.imshow(rgbImage[:,:, i])
 
     ### Convert medical images to RGB
-    def convert_RGB(self, image):
+    def __convert_RGB(self, image):
         max_val = np.max(image)
         min_val = np.min(image)
 
