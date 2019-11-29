@@ -1,4 +1,3 @@
-from fmriDataset import fmriDataset
 import numpy as np
 import itertools
 

@@ -10,7 +10,7 @@ class fmriDataset:
     
     def __init__(self, folder=None):
         # Download the dataset to data folder fetch the file names
-        self.__filename = 'data-science-P1.mat'
+        self.__filename = 'dataset/data-science-P1.mat'
         self.__X = None
         self.__Y = None
 
@@ -39,7 +39,7 @@ class fmriDataset:
         return self.__X, self.__Y
 
     ### Function to parse the data
-    def parseData(self, multiDimention=False, categoryRequired=False, shuffle=False, normalize=False):
+    def parseData(self, multiDimention=False, categoryRequired=False, shuffle=False, normalize=True):
         matContents = sio.loadmat(self.__filename, squeeze_me=True)
 
         # fetching the label details
