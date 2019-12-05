@@ -1,5 +1,5 @@
 from dataset import fmriDataset, dataSplit
-from classification_methods import voxelCorr
+from preprocessing import voxelCorr
 import numpy as np
 from sklearn.svm import LinearSVC
 
@@ -18,7 +18,25 @@ print(xTrain.shape)
 print(xTest.shape)
 
 print()
+print("Baseline:")
+print("================")
+print("Training model")
+clf = LinearSVC()
+clf.fit(xTrain, yTrain)
 
+print('.')
+print("Model Training finished")
+
+print()
+
+print("Test data Score")
+print(clf.score(xTest, yTest))
+print()
+
+print()
+
+print("Voxel 800 model:")
+print("================")
 print("Calculating voxel correlation scores using training dataset")
 vCorr = voxelCorr.voxelCorr(xTrain, 5)
 voxelScore = vCorr.getVoxelsScore()
