@@ -1,8 +1,6 @@
 from dataset import fmriDataset, dataSplit
 from preprocessing import voxelCorr, verbVectors
-import numpy as np
-from sklearn.svm import LinearSVC
-from sklearn.linear_model import LinearRegression
+from models import verbModels, voxelModels
 
 import argparse
 import os
@@ -42,50 +40,36 @@ print()
 
 print("Test Train data split")
 dataSplit = dataSplit.dataSplit(X, Y)
-xTrain, yTrain, xTest, yTest = dataSplit.trainTestSplit(itr=4)
+xTrain, yTrain, xTest, yTest = dataSplit.trainTestSplit(itr=1)
 print(xTrain.shape)
 print(xTest.shape)
 print()
 
 if args.model == 'verb':
     print("Semantic verb vectors model")
-    sv = verbVectors.semanticVectors()
     
-    nLabels = sv.nounLabels
-    verbVectors = sv.verbVectors
+    try:
+        nLabels = np.load('preprocessing/cmu_nLabels.npy')
+        verbVectors = np.load('preprocessing/cmu_verbVectors.npy')
+        nLabels = nLabels.tolist()
+
+    except:
+        sv = verbVectors.semanticVectors()    
+        nLabels = sv.nounLabels
+        verbVectors = sv.verbVectors
+        np.save("preprocessing/cmu_nLabels.npy", nLabels)
+        np.save("preprocessing/cmu_verbVectors.npy", verbVectors)
     
-    verbVectorsTrain = []
-    for yl in yTrain:
-        i = nLabels.index(yl)
-        verbVectorsTrain.append(verbVectors[i])
+    vm = verbModels.verbModel(xTrain, yTrain, xTest, yTest)
+    vm.parseVerbVectors(nLabels, verbVectors)
+    vm.layer1()
+    vm.layer2(nLabels, verbVectors)
     
-    verbVectorsTest = []
-    for yl in yTest:
-        i = nLabels.index(yl)
-        verbVectorsTest.append(verbVectors[i])
-    
-    print()
-    print("Linear Regression model")
-    print("Training layer 1")
-    regr = LinearRegression()
-    regr.fit(xTrain, verbVectorsTrain)
-    
-    output = regr.predict(xTest)
-    
-    print()
-    print("Linear SVC")
-    print("Training layer 2")
-    clf = LinearSVC()
-    clf.fit(verbVectors, nLabels)
-    print()
-    
-    print("Test data Score")
-    print(clf.score(output, yTest))
-    print()
+    print(vm.score)
 
 elif args.model == 'voxel':
     
-    print("Voxel 800 model:")
+    print("Voxel 1000 model:")
     print("================")
     print("Calculating voxel correlation scores using training dataset")
     vCorr = voxelCorr.voxelCorr(xTrain, 5)
@@ -94,16 +78,10 @@ elif args.model == 'voxel':
 
     print()
 
-    print("Selecting voxels with high voxel correlation scores")
-    sortedIndex = np.argsort(voxelScore)[::-1]
-    xTrain = xTrain[:, sortedIndex[:800]]
-    xTest = xTest[:, sortedIndex[:800]]
-
-    print()
-
     print("Training model")
-    clf = LinearSVC()
-    clf.fit(xTrain, yTrain)
+    vm = voxelModels.voxel(xTrain, yTrain, xTest, yTest)
+    vm.transform(voxelScore)
+    vm.train()
 
     print('.')
     print("Model Training finished")
@@ -111,7 +89,7 @@ elif args.model == 'voxel':
     print()
 
     print("Test data Score")
-    print(clf.score(xTest, yTest))
+    print(vm.score)
     print()
 
 elif args.model == 'baseline':
@@ -119,53 +97,30 @@ elif args.model == 'baseline':
     print("Baseline:")
     print("================")
     print("Training model")
-    clf = LinearSVC()
-    clf.fit(xTrain, yTrain)
-
+    baseline = voxelModels.baseline(xTrain, yTrain, xTest, yTest)
+    baseline.train()
+    
     print('.')
     print("Model Training finished")
 
     print()
 
     print("Test data Score")
-    print(clf.score(xTest, yTest))
+    print(baseline.score)
     print()
 
 elif args.model == 'gvmodel':
     
     nLabels = np.load('preprocessing/google_lbls.npy')
     gverbVectors = np.load('preprocessing/google_word_vec.npy')
-    
     nLabels = nLabels.tolist()
+
+    gm = verbModels.verbModel(xTrain, yTrain, xTest, yTest)
+    gm.parseVerbVectors(nLabels, verbVectors)
+    gm.layer1()
+    gm.layer2()
     
-    gverbVectorsTrain = []
-    for yl in yTrain:
-        i = nLabels.index(yl)
-        gverbVectorsTrain.append(gverbVectors[i])
-    
-    gverbVectorsTest = []
-    for yl in yTest:
-        i = nLabels.index(yl)
-        gverbVectorsTest.append(gverbVectors[i])
-    
-    print()
-    print("Linear Regression model")
-    print("Training layer 1")
-    regr = LinearRegression()
-    regr.fit(xTrain, gverbVectorsTrain)
-    
-    output = regr.predict(xTest)
-    
-    print()
-    print("Linear SVC")
-    print("Training layer 2")
-    clf = LinearSVC()
-    clf.fit(gverbVectors, nLabels)
-    print()
-    
-    print("Test data Score")
-    print(clf.score(output, yTest))
-    print()
+    print(gm.score)
     
     
 else:
