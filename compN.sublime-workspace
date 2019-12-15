@@ -1,0 +1,306 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ch",
+				"check\tstatement"
+			],
+			[
+				"E",
+				"error\tfunction"
+			],
+			[
+				"de",
+				"debug\tfunction"
+			],
+			[
+				"De",
+				"debug\tfunction"
+			],
+			[
+				"cl",
+				"classmethod\tclass"
+			],
+			[
+				"R",
+				"RED"
+			],
+			[
+				"use",
+				"user_name\tstatement"
+			],
+			[
+				"get",
+				"get_details\tfunction"
+			],
+			[
+				"c",
+				"comment\tparam"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "iitk_thesis/fmri_classification/train.py",
+			"settings":
+			{
+				"buffer_size": 3218,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Mate",
+				"Material Theme: Advanced configuration"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instak",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/piyushsihag/Desktop/Computational-Neuroscience",
+		"/Users/piyushsihag/Desktop/Computational-Neuroscience/computational_neuroscience_models",
+		"/Users/piyushsihag/Desktop/Computational-Neuroscience/iitk_thesis",
+		"/Users/piyushsihag/Desktop/Computational-Neuroscience/iitk_thesis/fmri_classification"
+	],
+	"file_history":
+	[
+		"/Users/piyushsihag/Desktop/Computational-Neuroscience/README.md",
+		"/Users/piyushsihag/Desktop/Computational-Neuroscience/iitk_thesis/fmri_classification/train.py",
+		"/Users/piyushsihag/Desktop/Computational-Neuroscience/thesis/fmri_classification/fmri",
+		"/Users/piyushsihag/Documents/SimpleHTTPServerWithUpload.py",
+		"/Volumes/Pure_Backup/Study/CS698F/fencep.py",
+		"/Volumes/Pure_Backup/Study/CS698F/mmap_demo.py",
+		"/Volumes/Pure_Backup/Study/CS698F/getbit.py",
+		"/Volumes/Pure_Backup/Study/CS698F/multiprc.py",
+		"/Users/piyushsihag/Documents/Most_important/Removable Disk/Mint/path.py",
+		"/Users/piyushsihag/Documents/Most_important/Removable Disk/Mint/script1.sh",
+		"/Users/piyushsihag/Documents/Most_important/Removable Disk/Mint/script.sh",
+		"/Users/piyushsihag/Documents/Most_important/Removable Disk/Mint/Lingustics/data.py",
+		"/Users/piyushsihag/Desktop/Full_Backup/Desktop/lottery.py",
+		"/Users/piyushsihag/Desktop/Full_Backup/Desktop/exceptions.py",
+		"/Users/piyushsihag/Desktop/ledger/ledger.py",
+		"/Users/piyushsihag/Desktop/ledger.py",
+		"/Users/piyushsihag/Library/Application Support/Sublime Text 3/Packages/Jedi - Python autocompletion/sublime_jedi.sublime-settings",
+		"/Users/piyushsihag/Library/Application Support/Sublime Text 3/Packages/User/sublime_jedi.sublime-settings"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "iitk_thesis/fmri_classification/train.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3218,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"show_definitions": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 189.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "compN.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

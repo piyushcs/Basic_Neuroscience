@@ -2,8 +2,8 @@ import sklearn
 import numpy as np
 import scipy.io as sio
 #from sklearn.model_selection import KFold
-import matplotlib.pyplot as plt
-import matplotlib as mpl
+#import matplotlib.pyplot as plt
+#import matplotlib as mpl
 
 # fMRI CMU dataset class
 class fmriDataset:

@@ -1,6 +1,7 @@
 from dataset import fmriDataset, dataSplit
 from preprocessing import voxelCorr, verbVectors
 from models import verbModels, voxelModels
+import numpy as np
 
 import argparse
 import os
@@ -64,7 +65,8 @@ if args.model == 'verb':
     vm.parseVerbVectors(nLabels, verbVectors)
     vm.layer1()
     vm.layer2(nLabels, verbVectors)
-    
+    print()
+
     print(vm.score)
 
 elif args.model == 'voxel':
@@ -116,9 +118,9 @@ elif args.model == 'gvmodel':
     nLabels = nLabels.tolist()
 
     gm = verbModels.verbModel(xTrain, yTrain, xTest, yTest)
-    gm.parseVerbVectors(nLabels, verbVectors)
+    gm.parseVerbVectors(nLabels, gverbVectors)
     gm.layer1()
-    gm.layer2()
+    gm.layer2(nLabels, gverbVectors)
     
     print(gm.score)
     

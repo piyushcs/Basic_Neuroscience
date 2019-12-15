@@ -19,7 +19,6 @@ class verbModel:
         print('layer 1 training')
         self.regr.fit(self.__xTrain, self.__verbVectorsTrain)
         self.__layer1 = self.regr.predict(self.__xTest)
-        print()
     
     def parseVerbVectors(self, nLabels, verbVectors):
         verbVectorsTrain = []
