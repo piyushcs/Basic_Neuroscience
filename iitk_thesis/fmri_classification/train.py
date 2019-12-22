@@ -1,6 +1,6 @@
 from dataset import fmriDataset, dataSplit
 from preprocessing import voxelCorr, verbVectors
-from models import verbModels, voxelModels, convModels
+from models import verbModels, voxelModels
 import numpy as np
 
 import argparse
