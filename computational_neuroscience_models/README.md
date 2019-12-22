@@ -1,4 +1,4 @@
-#### Computational Neuroscine Models
+#### Computational Neuroscience Models
 
 1. Spike-Triggered Average
 2. Integrate and fire Neuron
