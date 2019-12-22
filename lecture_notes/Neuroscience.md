@@ -44,7 +44,7 @@ reaches the threshold at axon hillock, action potential, then more positive
 charge is taken in by opening other channels around axon hillock, which will 
 reach to axon terminals, then vesicles can release neurotransmitters.
 
-![alt text](../images/Neuron.png "Neurons Communication")
+![alt text](Neuron.png "Neurons Communication")
 
 Vesicles and Neurotransmitters
 
