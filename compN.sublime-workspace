@@ -51,6 +51,15 @@
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
+		},
+		{
+			"file": "compN.sublime-project",
+			"settings":
+			{
+				"buffer_size": 135,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
 		}
 	],
 	"build_system": "",
@@ -120,7 +129,8 @@
 		"/Users/piyushsihag/Desktop/Computational-Neuroscience",
 		"/Users/piyushsihag/Desktop/Computational-Neuroscience/computational_neuroscience_models",
 		"/Users/piyushsihag/Desktop/Computational-Neuroscience/iitk_thesis",
-		"/Users/piyushsihag/Desktop/Computational-Neuroscience/iitk_thesis/fmri_classification"
+		"/Users/piyushsihag/Desktop/Computational-Neuroscience/iitk_thesis/fmri_classification",
+		"/Users/piyushsihag/Desktop/Computational-Neuroscience/iitk_thesis/material"
 	],
 	"file_history":
 	[
@@ -176,7 +186,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -192,8 +202,8 @@
 						"selection":
 						[
 							[
-								0,
-								0
+								154,
+								154
 							]
 						],
 						"settings":
@@ -202,6 +212,34 @@
 							"syntax": "Packages/Python/Python.sublime-syntax",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "compN.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 135,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

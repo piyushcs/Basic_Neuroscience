@@ -1,6 +1,6 @@
 from dataset import fmriDataset, dataSplit
 from preprocessing import voxelCorr, verbVectors
-from models import verbModels, voxelModels
+from models import verbModels, voxelModels, convModels
 import numpy as np
 
 import argparse
@@ -16,7 +16,8 @@ arg_parser.add_argument('--model',
                        action='store',
                        type=str,
                        help='specify model for example verb, voxel, baseline, gvmodel etc.',
-                       required=True)
+                       default="voxel")
+                       # required=True)
 
 arg_parser.add_argument('--crossValidation',
                        action='store',
@@ -31,7 +32,7 @@ if args.crossValidation:
     sys.exit(1)
 
 # Loading the dataset
-dataset = fmriDataset.fmriDataset()
+dataset = fmriDataset.fmriDataset(multiDimention=True)
 
 print("Loading dataset")
 X, Y = dataset.getData()
@@ -41,7 +42,7 @@ print()
 
 print("Test Train data split")
 dataSplit = dataSplit.dataSplit(X, Y)
-xTrain, yTrain, xTest, yTest = dataSplit.trainTestSplit(itr=1)
+xTrain, yTrain, xTest, yTest = dataSplit.trainTestSplit(itr=3)
 print(xTrain.shape)
 print(xTest.shape)
 print()

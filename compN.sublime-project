@@ -4,5 +4,8 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+    	"python_interpreter": "/Users/piyushsihag/python3.7/bin/activate"
+	}
 }

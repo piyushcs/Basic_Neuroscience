@@ -8,14 +8,14 @@ import scipy.io as sio
 # fMRI CMU dataset class
 class fmriDataset:
     
-    def __init__(self, folder=None):
+    def __init__(self, multiDimention):
         # Download the dataset to data folder fetch the file names
         self.__filename = 'dataset/data-science-P1.mat'
         self.__X = None
         self.__Y = None
 
         # Parsing the data
-        self.parseData()
+        self.parseData(multiDimention)
 
     ### Converting flat fmri images to 3D
     def __convert3D(self, flatFMRI, converter3D):
@@ -72,12 +72,9 @@ class fmriDataset:
 
             images3D = []
             for i in range(X.shape[0]):
-                row = []
-                for j in range(X.shape[1]):
-                    flat_img = X[i][j]
-                    image3D = self.__convert3D(flat_img, converter3D)
-                    row.append(image3D)
-                images3D.append(row)
+                flat_img = X[i]
+                full_img = self.__convert3D(flat_img, converter3D)
+                images3D.append(full_img)
 
             X = images3D
 
