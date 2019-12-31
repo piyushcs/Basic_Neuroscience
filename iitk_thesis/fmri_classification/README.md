@@ -41,6 +41,8 @@ For example, Voxel-400 (choosing top 400 highly correlated voxels), all voxels e
 | CNN + voxel              | 35.72                        | 5.6      |
 | wordvec + voxel          | 31.39                        | 3.9      |
 
+In thesis, top-N metric in used for evaluation. Leave one out results are computed. Category and noun labels both are used.
+
 #### References
 
 [FMRI CMU](https://www.cs.cmu.edu/afs/cs/project/theo-73/www/science2008/data.html)
