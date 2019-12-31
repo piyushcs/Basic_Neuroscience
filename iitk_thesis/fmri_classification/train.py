@@ -32,7 +32,7 @@ if args.crossValidation:
     sys.exit(1)
 
 # Loading the dataset
-dataset = fmriDataset.fmriDataset(multiDimention=True)
+dataset = fmriDataset.fmriDataset(multiDimention=False)
 
 print("Loading dataset")
 X, Y = dataset.getData()
