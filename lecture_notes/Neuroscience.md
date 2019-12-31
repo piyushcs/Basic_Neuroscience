@@ -86,8 +86,4 @@ example schizophrenia, because dopamine change is global.
 
 ## Credits
 
-[Coursera Computational Neuroscience](https://www.coursera.org/learn/computational-neuroscience)
-
 [Stanford Lectures](https://www.youtube.com/watch?v=NNnIGh9g6fA&list=PL848F2368C90DDC3D)
-
-[Markdown cheat sheet](https://en.support.wordpress.com/markdown-quick-reference/)
